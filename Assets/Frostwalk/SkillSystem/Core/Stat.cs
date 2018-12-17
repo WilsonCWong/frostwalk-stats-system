@@ -39,7 +39,7 @@ namespace Frostwalk.StatSystem
             }
         }
         public float ExpToNext { get; private set; }
-        public float MaxPoints { get { return maxPoints; } private set { maxPoints = value; } }
+        public float MaxPoints { get { return WithAccuracy(maxPoints); } private set { maxPoints = WithAccuracy(value); } }
 
         public event AddExpHandler OnAddExp;
         public event AddSkillPointsHandler OnAddSkillPoints;
