@@ -1,7 +1,9 @@
 # Frostwalk Stats System
 This is a simple stats system with a custom inspector-based design tool to help you easily create stats for your game characters and entities.
 
-![Stats Inspector](https://i.imgur.com/el5Pqxn.png)
+<p align="center"> 
+<img src="https://i.imgur.com/el5Pqxn.png" title="Stats Inspector" style="width: 60%;" />
+</p>
 
 ## Requirements
 * Unity 2017.4.17f1 or above
