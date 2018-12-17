@@ -30,7 +30,7 @@ namespace Frostwalk.StatSystem
         public String Name { get { return name; } set { name = value; } } 
         public float CurrentPoints { get { return WithAccuracy(currentPoints); } private set { currentPoints = WithAccuracy(value); } }
         public float CurrentExp {
-            get { return currentExp; }
+            get { return WithAccuracy(currentExp); }
             private set {
                 if (currentExp + value >= maxExp)
                     currentExp = WithAccuracy(maxExp);
@@ -80,7 +80,7 @@ namespace Frostwalk.StatSystem
                 float newPoints = CurrentPoints;
                 for (float i = CurrentPoints; i <= maxPoints; i++)
                 {
-                    if (CurrentExp >= expCurve.Evaluate((i) / maxPoints) * maxExp)
+                    if (CurrentExp >= WithAccuracy(expCurve.Evaluate((i) / maxPoints) * maxExp))
                         newPoints = i;
                     else break;
                 }
