@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
 
     public void LogLevelUp(Stat s, float levelsGained)
     {
-        Debug.Log("Gained " + levelsGained + " level for " + s.Name + ".");
+        Debug.Log("Gained " + levelsGained + " levels for " + s.Name + ".");
         Debug.Log(s.Name + " is now Level " + s.CurrentPoints + ".");
     }
 
