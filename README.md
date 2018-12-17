@@ -8,7 +8,7 @@ This is a simple stats system with a custom inspector-based design tool to help 
 To install, grab the latest package release and import it into your project. If you haven't already, also import Odin Inspector and Serializer into your project.
 
 ### Why is Odin required?
-Odin allows for the serialization of dictionaries, which I make use of in the stat system. Due to this, I'm able to easily create an editor tool to modify the stats. I could've hacked it to use a list instead, but the tool wouldn't be as function or look as good and the API wouldn't be as clean.
+Odin allows for the serialization of dictionaries, which I make use of in the stat system. Due to this, I'm able to easily create an editor tool to modify the stats. I could've hacked it to use a list instead, but the tool wouldn't be as functional or look as good and the API wouldn't be as clean.
 
 ## How does it work?
 The stats are based on points. Many games come to mind: Elder Scrolls, Fallout, Mount & Blade, FTL, etc. There is also an option to have these points level up based on experience.
