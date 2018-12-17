@@ -15,6 +15,6 @@ The stats are based on points. Many games come to mind: Elder Scrolls, Fallout, 
 
 To start using, create a Stats Object in your assets. This is done by right clicking in your Project Pane and going to Create -> Skill System -> Stat Object. This creates a Stat asset that can be plugged into your characters directly or serve as a template as part of a Factory pattern (which the example in the project kind of does).
 
-Refer to the example StatSystem.cs under the Examples/Test folder. The example shows the usage of event handlers to get information from a stat and how you would go about using this system. You can test the functionality by double clicking the Stats property on the Player object and using the inspector tools.
+Refer to the example Player.cs and StatSystem.cs under the Examples/Test folder. The example shows the usage of event handlers to get information from a stat and how you would go about using this system. You can test the functionality by double clicking the stats property on the Player object and using the inspector tools provided.
 
 I will go back later to perform some more code cleanup and extend the API a bit for StatSystem.cs to make event subscriptions easier.
