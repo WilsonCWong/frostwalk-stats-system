@@ -1,6 +1,8 @@
 # Frostwalk Stats System
 This is a simple stats system with a custom inspector-based design tool to help you easily create stats for your game characters and entities.
 
+![Stats Inspector](https://i.imgur.com/el5Pqxn.png)
+
 ## Requirements
 * Unity 2017.4.17f1 or above
 * Odin Inspector and Serializer 2.0.13 or above ([Purchase here](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041))
