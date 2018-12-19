@@ -1,5 +1,5 @@
 # Frostwalk Stats System
-This is a simple stats system with a custom inspector-based design tool to help you easily create stats for your game characters and entities.
+This is a simple stats system with a custom inspector-based design tool to help you easily create stats for your game characters and entities. As of v1.1, it also comes with a redesigned event system based on Ryan Hipple's ScriptableObject approach. I've taken inspiration from [NeoDragonCP](https://github.com/NeoDragonCP/Unity-ScriptableObjects-Game-Events-) and [Sipstaff](http://www.sirenix.net/odininspector/manual/introduction/serialize-anything)'s variation on this system.
 
 <p align="center"> 
 <img src="https://i.imgur.com/el5Pqxn.png" title="Stats Inspector" style="width: 60%;" />
@@ -22,3 +22,6 @@ To start using, create a Stats Object in your assets. This is done by right clic
 Refer to the example Player.cs and StatSystem.cs under the Examples/Test folder. The example shows the usage of event handlers to get information from a stat and how you would go about using this system. You can test the functionality by double clicking the stats property on the Player object and using the inspector tools provided.
 
 I will go back later to perform some more code cleanup and extend the API a bit for StatSystem.cs to make event subscriptions easier.
+
+## Is this plug and play or ready for production?
+No. The event system is not contained in its own namespace and the code could use some documenting. This was just a test project I've done in preparation for developing my next game. It is, however, a good foundation to build off of to get up and running.

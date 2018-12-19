@@ -14,7 +14,10 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 271aaf93e7df2a04dbbf450329266dba, type: 2}
+    - {fileID: 11400000, guid: f4bfdd485076901458ec0eaecb00b177, type: 2}
+    - {fileID: 11400000, guid: 5f8c5eb931a0638498fc3e7581d4d40b, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -127,6 +130,15 @@ MonoBehaviour:
     - Name: maxExp
       Entry: 4
       Data: 10000
+    - Name: OnAddExp
+      Entry: 10
+      Data: 0
+    - Name: OnAddSkillPoints
+      Entry: 10
+      Data: 1
+    - Name: OnLevelUp
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -226,6 +238,15 @@ MonoBehaviour:
     - Name: maxExp
       Entry: 4
       Data: 10000
+    - Name: OnAddExp
+      Entry: 10
+      Data: 0
+    - Name: OnAddSkillPoints
+      Entry: 10
+      Data: 1
+    - Name: OnLevelUp
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -325,6 +346,15 @@ MonoBehaviour:
     - Name: maxExp
       Entry: 4
       Data: 10000
+    - Name: OnAddExp
+      Entry: 10
+      Data: 0
+    - Name: OnAddSkillPoints
+      Entry: 10
+      Data: 1
+    - Name: OnLevelUp
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 8
       Data: 

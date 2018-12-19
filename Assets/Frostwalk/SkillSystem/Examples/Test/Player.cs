@@ -15,20 +15,6 @@ public class Player : MonoBehaviour
     {
         stats = Object.Instantiate(statAsset);
     }
-    private void OnEnable()
-    {
-        stats.Skills["Sneak"].OnAddExp += new AddExpHandler(LogExpGain);
-        stats.Skills["Sneak"].OnAddSkillPoints += new AddSkillPointsHandler(LogSkillPointsGain);
-        stats.Skills["Sneak"].OnLevelUp += new LevelUpHandler(LogLevelUp);
-
-    }
-
-    void OnDisable()
-    {
-        stats.Skills["Sneak"].OnAddExp -= new AddExpHandler(LogExpGain);
-        stats.Skills["Sneak"].OnAddSkillPoints -= new AddSkillPointsHandler(LogSkillPointsGain);
-        stats.Skills["Sneak"].OnLevelUp -= new LevelUpHandler(LogLevelUp);
-    }
 
     public void LogExpGain(Stat s, float exp)
     {

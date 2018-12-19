@@ -5,10 +5,6 @@ using UnityEngine;
 
 namespace Frostwalk.StatSystem
 {
-    public delegate void AddExpHandler(Stat s, float expAdded);
-    public delegate void AddSkillPointsHandler(Stat s, float pointsAdded);
-    public delegate void LevelUpHandler(Stat s, float levelsGained);
-
     [Serializable]
     public class Stat
     {
@@ -41,9 +37,9 @@ namespace Frostwalk.StatSystem
         public float ExpToNext { get; private set; }
         public float MaxPoints { get { return WithAccuracy(maxPoints); } private set { maxPoints = WithAccuracy(value); } }
 
-        public event AddExpHandler OnAddExp;
-        public event AddSkillPointsHandler OnAddSkillPoints;
-        public event LevelUpHandler OnLevelUp;
+        public StatsGameEvent OnAddExp;
+        public StatsGameEvent OnAddSkillPoints;
+        public StatsGameEvent OnLevelUp;
 
         public Stat()
         {
@@ -89,18 +85,18 @@ namespace Frostwalk.StatSystem
                 if (diff != 0)
                 {
                     CurrentPoints = newPoints;
-                    if (OnLevelUp != null) OnLevelUp(this, diff);
+                    if (OnLevelUp != null) OnLevelUp.Raise(this, diff);
                 }
 
                 UpdateExpToNextLevel();
-                if (OnAddExp != null) OnAddExp(this, WithAccuracy(exp));
+                if (OnAddExp != null) OnAddExp.Raise(this, WithAccuracy(exp));
             }
         }
 
         public void AddSkillPoints(float p)
         {
             CurrentPoints += WithAccuracy(p);
-            if (OnAddSkillPoints != null) OnAddSkillPoints(this, p);
+            if (OnAddSkillPoints != null) OnAddSkillPoints.Raise(this, p);
         }
 
         public void RemoveSkillPoints(float p)

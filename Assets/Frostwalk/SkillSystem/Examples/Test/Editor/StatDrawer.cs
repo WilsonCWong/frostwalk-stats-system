@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEditor;
 using Sirenix.OdinInspector.Editor;
 using Sirenix.Utilities.Editor;
-using Sirenix.Serialization;
 
 namespace Frostwalk.StatSystem.Editor
 {
