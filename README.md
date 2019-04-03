@@ -1,5 +1,5 @@
 # Frostwalk Stats System
-This is a simple stats system with a custom inspector-based design tool to help you easily create stats for your game characters and entities. As of v1.1, it also comes with a redesigned event system based on Ryan Hipple's ScriptableObject approach. I've taken inspiration from [NeoDragonCP](https://github.com/NeoDragonCP/Unity-ScriptableObjects-Game-Events-) and [Sipstaff](http://www.sirenix.net/odininspector/manual/introduction/serialize-anything)'s variation on this system.
+This is a simple stats system with a custom inspector-based design tool to help you easily create stats for your game characters and entities. As of v1.1, it also comes with a redesigned event system based on Ryan Hipple's ScriptableObject approach. I've taken inspiration from [NeoDragonCP](https://github.com/NeoDragonCP/Unity-ScriptableObjects-Game-Events-) and [Sipstaff](https://github.com/Sipstaff/Unity-SO-Events-With-Data)'s variation on this system.
 
 <p align="center"> 
 <img src="https://i.imgur.com/el5Pqxn.png" title="Stats Inspector" style="width: 60%;" />
